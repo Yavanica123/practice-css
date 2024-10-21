@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        input {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .email {
+            background-color: white;
+            color: black;
+            width: 70%;
+            height: 30px;
+            border-radius: 50px;
+            font-size: 15px;
+            padding: 5px 18px;
+        }
+        .color {
+            color: white;
+        }
+        #email {
+            margin: 10px;
+        }
+        #password {
+            border-radius: 50px;
+            margin: 10px;
+            width: 70%;
+            height: 30px;
+            font-size: 15px;
+            padding: 5px 18px;
+        }
+        .submit:hover {
+            background-color: green;
+            transition: 0.4s all ease;
+            color: white;
+        }
+        .submit {
+            background-color:white;
+            border-radius: 50px;
+            border: 1px solid green;
+            color: green;
+            cursor: pointer;
+            font-size: 20px;
+            transition: 0.4s all ease;
+        }
+        .reset:hover {
+            background-color: red;
+            color: white;
+        }
+        .reset {
+            background-color:white;
+            border-radius: 50px;
+            border: 1px solid red;
+            color: red;
+            cursor: pointer;
+            font-size: 20px;
+            margin-left: 25px;
+            transition: 0.7s ease;
+        }
+        .container {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .main {
+            text-align: center;
+        }
+        h1 {
+            color: red;
+            margin-bottom: 15px;
+        }
+        .maincontainer:hover {
+            border: 2px solid white;
+            box-shadow: 0px 0px 0px white;
+        }
+        .maincontainer {
+            border: 2px solid black;
+            width: 500px;
+            height: 270px;
+            border-radius: 10px;
+            padding: 10px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; 
+            backdrop-filter: blur(10px);
+        }
+        form {
+            border: 2px solid black;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        body {
+            background-image: url(image.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="maincontainer">
+            <h1>Login Page</h1>
+            <div class="container">
+                <input type="email" name="email" id="email" placeholder="Enter your email" class="email"><br>
+                <input type="password" name="password" id="password" placeholder="Enter your password"><br>
+            </div>
+            <div class="main">
+                <input type="submit" value="Submit" class="submit">
+                <input type="reset" value="Reset" class="reset">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
